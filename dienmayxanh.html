@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MUA HÀNG ĐIỆN MÁY XANH</title>
+</head>
+<body style="background-color:gray;">
+<form action="dienmayxanh.php">
+	<table style="width: 600px;border: 1px;background-color:white;" align="center">
+		<tr>
+			<td>
+				<table width="100%" border="1px">
+					<tr style="widows: 50px;" valign="top">
+						<td rowspan="3">
+							<img src="img/tvsamsung.png" width="100%" height="100%">
+						</td>
+						<td>
+							<h2>TV Samsung HUJ5737 1HP....</h2>
+							<h4>Chon 1 trong 2 khuyen mai</h4>
+							<input name="khuyenmai" id="km1" type="radio"><label for="km1">Khuyen mai vat tu</label>
+							<p>- Chi giao hang, khong lap dat</p>
+							<input name="khuyenmai" id="km2" type="radio"><label for="km2">combo khuyen mai + lap dat: mien phi toi da 5m day tri gias 800k (<a href="">Click xem chi tiet</a>)</label>
+							<p>- Mien phi cong lap dat v hut chan khong</p>
+						</td>
+						<td valign="top" align="right">
+						<price style="color: red">9.810.000<sup><u>d</u></sup></price>
+						<price style="text-align:right;"><del>11.500.000</del><sup><u>d</u></sup></price>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="background-color:yellow;">
+							Giam <font color="red">800k</font>, chi con <font color="red">9.000k <sup><u>d</u></sup></font>, khuyen mai.
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<label for="color">Mau:</label>
+							<select name="mau">
+								<option>Trang</option>
+								<option>den</option>
+								<option>xam</option>
+							</select>
+						</td>
+						<td>
+							-<input type="number" min="1" max="10">+
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr><!--sp-->
+		<tr>
+			<td>
+				<hr>
+				<p style="color:blue;">Su dung ma giam gia</p>
+				<table>
+					<tr>
+						<td width="245px">
+							<p>Tam tinh</p>
+							<p>Giam</p>
+							<p>Tong tien</p>
+						</td>
+						<td width="245px">
+							<p style="text-align: right;">9.800k</p>
+							<p style="text-align: right;">-800k</p>
+							<p style="text-align:right;color:red;">9.000k</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr><!--ma giam gia-->
+		<tr>
+			<td>
+				<hr>
+				<h2>THONG TIN KHACH HANG</h2>
+				<input type="radio" name="gioitinh" id="nam"><label for="nam">Anh</label>
+				<input type="radio" name="gioitinh" id="nu"><label for="nu">Chi</label>
+				<br>
+				<input type="text" placeholder="Ho va Ten" width="200px" height="20px">
+				<input type="tel" value="So dien thoai" width="200px" height="20px">
+				<br>
+				<h2>CHON CACH THUC NHAN HANG</h2>
+				<input type="radio" name="ship" id="giaotannoi"><label for="giaotannoi">Giao tan noi</label>
+				<input type="radio" name="ship" id="nhantructiep"><label for="nhantructiep">Nhan tai sieu thi</label>
+			<fieldset>
+				<legend></legend>
+					 <p>Chon dia chi de biet thoi gian nhan hang va phi van chuyen (neu co)</p>
+				<table style="width:100%;height:20px;">
+					<tr>
+						<td width="290px">
+							<Select>
+								<option>Ho Chi Minh</option>
+								<option>Ha Noi</option>
+							</Select>
+						</td>
+						<td width="290px">
+							<select>
+								<option>chon Quan Huyen</option>
+								<option>Quan 1</option>
+								<option>Quan 8</option>
+								<option>Huyen Binh Chanh</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td width="290px">
+							<Select>
+								<option>Chon Phuong xa</option>
+								<option>Phuong 1</option>
+								<option>xa 12</option>
+							</Select>
+						</td>
+						<td>
+						<input placeholder="So nha, ten duong" type="text">
+						</td>
+					</tr>
+				</table>				
+			</fieldset>
+			<input type="text" placeholder="yeu cau khac (khong bat buoc)" style="width:590px;">
+			<input type="checkbox">Goi nguoi khac nhan hang (neu co)
+			<fieldset>
+				<legend></legend>
+				<input type="radio" name="gioitinh" id="nam"><label for="nam">Anh</label>
+				<input type="radio" name="gioitinh" id="nu"><label for="nu">Chi</label><br>
+				<input type="text" placeholder="Ho ten nguoi nhan" style="width:290px;"><input type="tel" placeholder="so dien thoai nguoi nhan" style="width:290px;">
+			</fieldset>
+			<input type="checkbox">Xuat hoa don cong ty
+			<fieldset>
+				<legend></legend>
+				<input type="text" style="width:500px;" placeholder="Ten cong ty"><br>
+				<input type="text" placeholder="Dia chi cong ty" style="width:500px;"><br>
+				<input type="text" placeholder="Ma so thue" style="width:500px;">
+			</fieldset>
+			<hr>
+			<table width="590px">
+				<tr>
+					<td width="290px">
+						<p>Tong tien</p>
+					</td>
+					<td align="right">
+						<price style="color: red;">26.880.000<sup><u>d</u></sup></price>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="DAT HANG" style="color:white; width:590px; height:20px;text-align:center; border-radius: 4px;background-color:orange;">
+						<br>
+						<p align="center">Ban co the chon hinh thuc thanh toan sau khi dat hang</p>
+					</td>
+				</tr>
+			</table>
+			</td>
+		</tr><!--thong tin kh-->
+	</table>
+</form>
+</body>
+</html>
